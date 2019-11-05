@@ -1,4 +1,4 @@
-# SlashTEC interview-test
+#  interview-test
 
 We’d like to invite you to do the # DevOps technical assignment​ as discussed during your interview. 
 
