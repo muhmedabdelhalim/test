@@ -4,12 +4,7 @@ We’d like to invite you to do the # DevOps technical assignment​ as discusse
 
 This repo contains the assignment and should contain all the information you need​
 
-
-This is the assessment:
-
-
-DevOps technical assignment
-
+This is the assessment: DevOps technical assignment
 
 Goals
 
@@ -42,7 +37,6 @@ In addition to their application-specific endpoints all versions of both service
 /health/ready returns 200 when the service is done initializing and ready to serve requests, 503 when the service is still initializing.
 
 The above-mentioned services should run in isolated environments and both endpoints are combined and exposed using a reverse-proxy and/or load-balancer.
-
 
 Requirements
 
