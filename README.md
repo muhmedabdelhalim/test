@@ -53,21 +53,9 @@ Bonus points for increased use of automation, e.g.:
 Automation of the deployment using a CI/CD tool.
 Single click/command startup of the initial stack.
 
-Resources
+*Resources*
 
 The services are available for download:
-
-country-service:
-URL: countries-assembly-1.0.1.jar
-SHA-1: 92bf1a691fc6dc835b21e0d74102c41ad84635f9 countries-assembly-1.0.1.jar
-airport-service v1.0.1:
-URL: airports-assembly-1.0.1.jar
-SHA-1: 0bd35ea555b9aabaf30d255f3cb90aedf6bebca1 airports-assembly-1.0.1.jar
-airport-service v1.1.0:
-URL: airports-assembly-1.1.0.jar
-SHA-1: 40d479396e37f61b88913ad3de3a421c75ed8f45 airports-assembly-1.1.0.jar
-The services can be started with a single command, require Java 8 and run by default on port 8080: java -jar <service_name>.jar
-
 
 Deliverables
 
