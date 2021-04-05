@@ -16,7 +16,7 @@ jobs:
           command: |
             public_ip_address=$(wget -qO- http://checkip.amazonaws.com)
             echo "this computers public ip address is $public_ip_address"
-            aws ec2 authorize-security-group-ingress --region $AWS_REGION --group-id <sg-0b32daaf6660f672e --ip-permissions "[{\"IpProtocol\": \"tcp\", \"FromPort\": 443, \"ToPort\": 443, \"IpRanges\": [{\"CidrIp\": \"${public_ip_address}/32\"}]}]"
+            aws ec2 authorize-security-group-ingress --region $AWS_REGION --group-id sg-0b32daaf6660f672e --ip-permissions "[{\"IpProtocol\": \"tcp\", \"FromPort\": 443, \"ToPort\": 443, \"IpRanges\": [{\"CidrIp\": \"${public_ip_address}/32\"}]}]"
       - run:
           name: Do stuff
           command: echo "foo" && exit 1 # cause an error, which will halt the job.
