@@ -22,7 +22,7 @@ jobs:
           command: echo "foo" && exit 1 # cause an error, which will halt the job.
       - run:
           name: Clear Allow List
-          command: aws ec2 revoke-security-group-ingress ...
+          command: aws ec2 revoke-security-group-ingress --region $AWS_REGION --group-id sg-0b32daaf6660f672e --protocol tcp --port 443 --cidr ${public_ip_address}/32
           when: always # Will run no matter if a previous step has failed
 workflows:
    aws-cli:
