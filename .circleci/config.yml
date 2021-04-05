@@ -23,6 +23,8 @@ jobs:
             # 3- Get AWS Region
             # TODO Don't forget to replcae by your own Region
             AWS_REGION=eu-central-1
+            ~/bin/aws configure set aws_access_key_id $ACCESS_KEY_ID
+            ~/bin/aws configure set aws_secret_access_key $SECRET_ACCESS_KEY
             # 4- Get SG ID
             # TODO Don't forget to replace by your own SG ID
             SG_ID=sg-0e8a374749084d4d1
